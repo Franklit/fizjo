@@ -196,4 +196,42 @@ label.logo {
   width: 100%;
   text-align: center;
 }
+
+.kadra {
+  background-color: #8d60aa;
+}
+
+.kadra h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.kadra .lekarze {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.kadra .lekarze .lekarz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.kadra .lekarze .lekarz img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
