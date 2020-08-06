@@ -1,0 +1,28 @@
+.kontakt
+    h1
+        @include naglowek()
+    .kontakty
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        background-color: $color1
+        width: 100%
+        .dane
+            width: 200px
+            height: 100px
+            background-color: $color1
+            position: relative
+            i 
+                font-size: 40px
+                position: absolute
+                transform: translateX(-50%)
+                top: 0
+                
+            p
+                position: absolute
+                bottom: 0
+                width: 100%
+                font-size: 20px
+                color: white
+                padding: 0
+                margin: 0
