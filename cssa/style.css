@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 nav {
   background: #000;
   height: 80px;
@@ -373,5 +377,147 @@ label.logo {
   color: white;
   padding: 0;
   margin: 0;
+}
+
+.kontakt .sendmsg {
+  width: 100%px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kontakt .sendmsg .message {
+  font-size: 15px;
+  width: 600px;
+  height: 500px;
+  background-color: #8d60aa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kontakt .sendmsg .message .name {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kontakt .sendmsg .message .name .form_field {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #8d60aa;
+  color: white;
+  cursor: pointer;
+}
+
+.kontakt .sendmsg .message .name .form_field:focus + .form_label .content_name, .kontakt .sendmsg .message .name .form_field:valid + .form_label .content_name {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.kontakt .sendmsg .message .name .form_field:focus + .form_label::after, .kontakt .sendmsg .message .name .form_field:valid + .form_label::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.kontakt .sendmsg .message .name .form_label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.kontakt .sendmsg .message .name .form_label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid white;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.kontakt .sendmsg .message .name .form_label .content_name {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: white;
+  opacity: 0.6;
+}
+
+.kontakt .sendmsg .message .textcontent {
+  width: 100%;
+}
+
+.kontakt .sendmsg .message .textcontent .textarea {
+  width: 99.4%;
+  height: 200px;
+  background-color: #8d60aa;
+  border: none;
+  color: white;
+  background-color: #bb9eca;
+}
+
+.kontakt .sendmsg .message .textcontent .textarea::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.kontakt .sendmsg .message .textcontent .textarea:-ms-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.kontakt .sendmsg .message .textcontent .textarea::-ms-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.kontakt .sendmsg .message .textcontent .textarea::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.kontakt .sendmsg .message .textcontent .formessage {
+  color: white;
+  opacity: .7;
+}
+
+.kontakt .sendmsg .message .textcontent input {
+  width: 10%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.kontakt .map {
+  width: 600px;
 }
 /*# sourceMappingURL=style.css.map */

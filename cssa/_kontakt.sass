@@ -26,3 +26,85 @@
                 color: white
                 padding: 0
                 margin: 0
+    .sendmsg
+        width: 100%px
+        display: flex
+        justify-content: center
+
+        .message
+            font-size: 15px
+            width: 600px
+            height: 500px
+            background-color: $color1
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            // padding: 100px;
+            .name
+                width: 100%
+                height: 50px
+                position: relative
+                overflow: hidden
+                .form_field
+                    width: 100%
+                    height: 100%
+                    padding-top: 10px
+                    font-size: 20px
+                    border: none;
+                    background-color: $color1
+                    color: white
+                    cursor: pointer  
+                    &:focus + .form_label .content_name, &:valid + .form_label .content_name
+                        transform: translateY(-100%)   
+                    &:focus + .form_label::after, &:valid + .form_label::after 
+                        transform: translateX(0%)                 
+                .form_label
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    width: 100%
+                    height: 100%
+                    border-bottom: 1px solid white 
+                    cursor: pointer
+                    &::after
+                        content: ''
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        height: 100%
+                        width: 100%
+                        border-bottom: 2px solid white
+                        transform: translateX(-100%)
+                        transition: transform 0.3s ease
+                    .content_name
+                        position: absolute
+                        bottom: 10px
+                        left: 0
+                        transition: all 0.3s ease
+                        color: white
+                        opacity: 0.6
+            .textcontent
+                width: 100%
+                .textarea
+                    width: 99.4%
+                    height: 200px
+                    background-color: $color1
+                    border: none
+                    color: white
+                    background-color: $color2
+                .textarea::placeholder
+                    color: white
+                    opacity: 0.6
+
+                .formessage
+                    color: white      
+                    opacity: .7
+                input
+                    width: 10%
+                    margin-left: 50%
+                    transform: translateX(-50%)
+    .map
+        width: 600px
+               
+ 
