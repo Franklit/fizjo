@@ -4,9 +4,7 @@
     background: $color1
     h1
         @include naglowek()
-        height: 200px
-        margin-bottom: 100px
-        text-align: center
+
 
     .uslugi
         width: 1053px
@@ -15,11 +13,11 @@
         flex-wrap: wrap
         // height: 300px
         .usluga
-            width: 230px
+            width: 25%
             // height: 400px
             // background-color: $color2
             margin: 0 auto;
-            margin-bottom: 10px
+            margin-bottom: 100px
             display: flex
             flex-direction: column
             img
@@ -39,11 +37,29 @@
                     
                     
 
-@media screen and ( max-width: 992px )
+// @media screen and ( max-width: 992px )
+//     .oferta
+//         .uslugi
+//             .usluga
+//                     width: 350px
+
+@media screen and ( max-width: 1160px )
     .oferta
         .uslugi
+            width: 950px
             .usluga
-                    width: 350px
+                width: 40%
 
-
-        
+@media screen and ( max-width: 995px  )
+    .oferta
+        .uslugi
+            width: 720px
+            .usluga
+                width: 52%
+                margin-bottom: 50px
+    
+@media screen and ( max-width: 750px  )
+    .oferta
+        .uslugi
+            width: 100%
+    

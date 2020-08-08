@@ -1,68 +1,92 @@
 .cennik
     background-color: $color1
     h1
-    @include naglowek()
-    width: 100%
-    text-align: center
+        @include naglowek()
+        
+
+        
     
     .ceny
         width: 1053px
         margin: 0 auto
         display: flex
         flex-wrap: wrap
+        text-align: center
         justify-content: space-around
-        .cena
-            position: relative
-            height: 200px
-            width: 200px
-            background-color: $color2
-            // border: 2px solid black
-            margin: 100px 50px
-            
-            &:before
-                content: ''
-                position: absolute
-                top: -70px
-                
-                transform: translateX(-50%)
-                width: 0
-                height: 0
-                border-left: 100px solid transparent
-                border-right: 100px solid transparent 
-                border-bottom: 70px solid $color2
-            &::after
-                content: ''
-                position: absolute
-                left: 50%
-                top: -20px
-                transform: translateX(-50%)
-                width: 40px
-                height: 40px
-                border-radius: 50%
-                background-color: $color1
-        ul
-            font-size: 25px
-            text-decoration: none
-            margin: 0
-            padding: 0
-            li
-                list-style: none
-                width: 90%
-                height: 60px
-                border-bottom: 1px dashed $color1
+        .opakcen
+            width: 30%
+            height: 350px
+            .cena
                 margin: 0 auto
-                &:nth-child(1)
-                    line-height: 100%
-                    padding-top: 20px
-                    font-size: 28px
-                // font-size: 28px
-            span
-                color: $color1
-                opacity: .6
+                position: relative
+                height: 200px
+                width: 200px
+                background-color: $color2
+                // border: 2px solid black
+                // margin: 100px 50px
+                
+                &:before
+                    content: ''
+                    position: absolute
+                    top: -70px
+                    
+                    transform: translateX(-50%)
+                    width: 0
+                    height: 0
+                    border-left: 100px solid transparent
+                    border-right: 100px solid transparent 
+                    border-bottom: 70px solid $color2
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 50%
+                    top: -20px
+                    transform: translateX(-50%)
+                    width: 40px
+                    height: 40px
+                    border-radius: 50%
+                    background-color: $color1
+            ul
+                font-size: 25px
+                text-decoration: none
+                margin: 0
+                padding: 0
+                li
+                    list-style: none
+                    width: 90%
+                    height: 60px
+                    border-bottom: 1px dashed $color1
+                    margin: 0 auto
+                    &:nth-child(1)
+                        line-height: 100%
+                        padding-top: 20px
+                        font-size: 28px
+                    // font-size: 28px
+                span
+                    color: $color1
+                    opacity: .6
                 
                 
-       
 
+@media screen and ( max-width: 1160px  )
+    .cennik
+        .ceny
+            width: 950px
+            .opakcen
+                .cena
+    
+@media screen and ( max-width: 995px  )
+    .cennik
+        .ceny
+            width: 720px
+            .opakcen 
+                width: 40%   
 
-
+@media screen and ( max-width: 750px  )
+    .cennik
+        .ceny
+            width: 100%
+            .opakcen
+                width: 60%
+    
 

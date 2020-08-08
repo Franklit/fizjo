@@ -6,9 +6,7 @@
     background-color: $color1    
     h1
         @include naglowek()
-        width: 100%
-        text-align: center
-        margin-bottom: 100px
+
         
     .lekarze
         width: 1053px
@@ -20,12 +18,12 @@
         .lekarz
             display: flex
             flex-direction: column
-            width: 400px
+            width: 50%
             text-align: center
             // padding: 0 100px
             img
-                width: 200px
-                height: 200px
+                width: 300px
+                height: 300px
                 margin: 0 auto
                 margin-bottom: 50px
                 
@@ -35,3 +33,25 @@
             p
                 text-align: center
                 padding: 0 100px
+
+@media screen and ( max-width: 1060px )
+    .kadra
+        .lekarze
+            width: 950px
+            .lekarz
+                width: 40%
+                margin-bottom: 50px
+    
+@media screen and ( max-width: 995px )
+    .kadra
+        .lekarze
+            width: 720px
+            .lekarz
+                width: 60%
+@media screen and ( max-width: 750px )
+    .kadra
+        .lekarze
+            width: 100%
+            .lekarz
+                width: 100%
+    

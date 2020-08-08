@@ -177,9 +177,9 @@ label.logo {
 }
 
 .oferta .uslugi .usluga {
-  width: 230px;
+  width: 25%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,9 +208,28 @@ label.logo {
   text-align: center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1160px) {
+  .oferta .uslugi {
+    width: 950px;
+  }
   .oferta .uslugi .usluga {
-    width: 350px;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .oferta .uslugi {
+    width: 720px;
+  }
+  .oferta .uslugi .usluga {
+    width: 52%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .oferta .uslugi {
+    width: 100%;
   }
 }
 
@@ -221,9 +240,9 @@ label.logo {
 .kadra h1 {
   font-size: 100px;
   color: white;
-  width: 100%;
-  text-align: center;
+  height: 200px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .kadra .lekarze {
@@ -246,13 +265,13 @@ label.logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 400px;
+  width: 50%;
   text-align: center;
 }
 
 .kadra .lekarze .lekarz img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -266,11 +285,43 @@ label.logo {
   padding: 0 100px;
 }
 
+@media screen and (max-width: 1060px) {
+  .kadra .lekarze {
+    width: 950px;
+  }
+  .kadra .lekarze .lekarz {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .kadra .lekarze {
+    width: 720px;
+  }
+  .kadra .lekarze .lekarz {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .kadra .lekarze {
+    width: 100%;
+  }
+  .kadra .lekarze .lekarz {
+    width: 100%;
+  }
+}
+
 .cennik {
   background-color: #8d60aa;
+}
+
+.cennik h1 {
   font-size: 100px;
   color: white;
-  width: 100%;
+  height: 200px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -282,19 +333,25 @@ label.logo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.cennik .ceny .cena {
+.cennik .ceny .opakcen {
+  width: 30%;
+  height: 350px;
+}
+
+.cennik .ceny .opakcen .cena {
+  margin: 0 auto;
   position: relative;
   height: 200px;
   width: 200px;
   background-color: #bb9eca;
-  margin: 100px 50px;
 }
 
-.cennik .ceny .cena:before {
+.cennik .ceny .opakcen .cena:before {
   content: '';
   position: absolute;
   top: -70px;
@@ -307,7 +364,7 @@ label.logo {
   border-bottom: 70px solid #bb9eca;
 }
 
-.cennik .ceny .cena::after {
+.cennik .ceny .opakcen .cena::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -320,14 +377,14 @@ label.logo {
   background-color: #8d60aa;
 }
 
-.cennik .ceny ul {
+.cennik .ceny .opakcen ul {
   font-size: 25px;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
-.cennik .ceny ul li {
+.cennik .ceny .opakcen ul li {
   list-style: none;
   width: 90%;
   height: 60px;
@@ -335,20 +392,47 @@ label.logo {
   margin: 0 auto;
 }
 
-.cennik .ceny ul li:nth-child(1) {
+.cennik .ceny .opakcen ul li:nth-child(1) {
   line-height: 100%;
   padding-top: 20px;
   font-size: 28px;
 }
 
-.cennik .ceny ul span {
+.cennik .ceny .opakcen ul span {
   color: #8d60aa;
   opacity: .6;
+}
+
+@media screen and (max-width: 1160px) {
+  .cennik .ceny {
+    width: 950px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .cennik .ceny {
+    width: 720px;
+  }
+  .cennik .ceny .opakcen {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cennik .ceny {
+    width: 100%;
+  }
+  .cennik .ceny .opakcen {
+    width: 60%;
+  }
 }
 
 .kontakt h1 {
   font-size: 100px;
   color: white;
+  height: 200px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 .kontakt .kontakty {
@@ -365,10 +449,12 @@ label.logo {
 }
 
 .kontakt .kontakty .dane {
-  width: 200px;
+  width: 25%;
   height: 100px;
   background-color: #8d60aa;
   position: relative;
+  color: white;
+  text-align: center;
 }
 
 .kontakt .kontakty .dane i {
@@ -395,14 +481,15 @@ label.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .kontakt .sendmsg .message {
   font-size: 15px;
-  width: 600px;
+  width: 40%;
   height: 500px;
   background-color: #8d60aa;
   display: -webkit-box;
@@ -528,14 +615,76 @@ label.logo {
           transform: translateX(-50%);
 }
 
-.kontakt .map {
-  width: 600px;
+.kontakt .sendmsg .map {
+  width: 40%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1053px) {
+  .kontakt .kontakty {
+    width: 950px;
+  }
+  .kontakt .sendmsg {
+    width: 950px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .kontakt .kontakty {
+    width: 720px;
+  }
+  .kontakt .sendmsg {
+    width: 720px;
+  }
+  .kontakt .sendmsg .message {
+    width: 80%;
+  }
+  .kontakt .sendmsg .map {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .kontakt .kontakty {
+    width: 100%;
+  }
+  .kontakt .kontakty .dane {
+    width: 52%;
+    margin-bottom: 35px;
+  }
+  .kontakt .sendmsg {
+    width: 100%;
+  }
 }
 
 .bottom {
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: black;
   font-size: 10px;
+  color: white;
+  padding-left: 20px;
+}
+
+.bottom .socialmedia {
+  font-size: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.bottom .socialmedia i {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
