@@ -6,23 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" href="cssa/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&family=Sriracha&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <nav>
         <!-- <div class="kolan"><img src="foto/kolan.png"></div> -->
         <input type="checkbox" id="check">
-        <label for="check">
+        <label for="check" class="checkbtn">
             
             <i class="fas fa-bars checkbtn"></i>
         </label>
         <label class="logo">Dr kolan</label>
         <ul>
-            <a href="#"><li>Strona Główna</li></a>
-            <a href="#"><li>Oferta</li></a>
-            <a href="#"><li>Zespół</li></a>
-            <a href="#"><li>Cennik</li></a>
-            <a href="#"><li>Kontakt</li></a>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
         </ul>
     </nav>
 <div class="container">
@@ -33,13 +34,16 @@
         <div class="photo">
             <img src="foto/main-foto1.png">
         </div>
-        <div class="napis">Fizjoterapia</div>
+        <div class="napis">Fizj</div>
         <!-- <div class="down"><a href="#"><i class="fas fa-arrow-circle-down"></i></a></div> -->
         <div class="down"><i>S</i></div>
     </div>
-    <hr>
+    
     <div class="oferta">
-        <h1>Nasza Oferta</h1>
+        <h1>Oferta</h1>
+        <p>-nasza oferta-</p>
+        
+        
         <div class="uslugi">
             <div class="usluga"><img src="foto/kolano.png" alt=""><span>Ból kolana</span><div class="tekst"> Oferujemy Państwu kompleksową fizjoterapię składającą się z diagnostyki, terapii manalnej, tarepii tkanek miękkich, fizykoterapii, ćwiczeń i kineziotapingu</div></div>
             <div class="usluga"><img src="foto/plecy.png" alt=""><span>Ból pleców</span><div class="tekst"> Zajmujemy się leczeniem bólu pleców, promienującego do kończyn dolnych i górnych, rwą kulszową, dyskopatią, bólami mięśniowymi itp. </div></div>
@@ -49,9 +53,10 @@
         </div>
 
     </div>
-    <hr>
+    
     <div class="kadra">
-        <h1>Nasza Kadra</h1>
+        <h1>Kadra</h1>
+        <p>-nasi lekarze-</p>
         <div class="lekarze">
             <div class="lekarz"><img src="foto/face1.png" alt=""><span>Dr Bla Bla</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea consequatur porro nisi, deleniti facere quo quisquam ab magni, voluptates eius omnis dolorem odio ut dignissimos mollitia sequi debitis amet?</p></div>
             <div class="lekarz"><img src="foto/face2.png" alt=""><span>Dr2 Bla bla</span><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab iusto fugit voluptas nihil molestiae id? A, ad? Alias dicta, commodi necessitatibus ipsam minus porro asperiores! Magni harum sunt ad.</p></div>
@@ -59,6 +64,7 @@
     </div>
     <div class="cennik">
         <h1>Cennik</h1>
+        <p>-nasze ceny-</p>
         <div class="ceny">
             <div class=opakcen>
                 <div class="cena">
@@ -119,10 +125,12 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </div>
-
     <div class="kontakt">
         <h1>Kontakt</h1>
+        <p>-napisz do nas-</p>
+        
         <div class="kontakty">
             <div class="dane">
                 <i class="fas fa-mobile-alt"></i>

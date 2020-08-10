@@ -1,7 +1,9 @@
 .cennik
-    background-color: $color1
+    background-color: $color3
     h1
         @include naglowek()
+    p
+        @include podglowek()
         
 
         
@@ -45,7 +47,7 @@
                     width: 40px
                     height: 40px
                     border-radius: 50%
-                    background-color: $color1
+                    background-color: $color3
             ul
                 font-size: 25px
                 text-decoration: none
@@ -57,6 +59,7 @@
                     height: 60px
                     border-bottom: 1px dashed $color1
                     margin: 0 auto
+                    color: white
                     &:nth-child(1)
                         line-height: 100%
                         padding-top: 20px

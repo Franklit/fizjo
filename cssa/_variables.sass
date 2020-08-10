@@ -1,9 +1,31 @@
 $color1 : #8d60aa
 $color2 : #bb9eca
-$colortop: black
+$color3: #9b68bd
+$color4: #8a5ca8
+$colortop: #2e2929
+$colorli: $color1
+$colorul: pink
+$colormenu: #502f66
+
+$czcionka1: 'Rowdies', cursive;
+$czcionka2: 'Sriracha', cursive;
+
+
+   
 @mixin naglowek
     font-size: 100px
     color: white 
-    height: 200px
-    margin-bottom: 100px
+    // height: 200px
+    // margin-bottom: 100px
+    font-family: $czcionka1
     text-align: center
+    text-transform: uppercase
+    line-height: 100%
+
+@mixin podglowek
+    font-size: 20px
+    color: white
+    font-family: $czcionka2
+    width: 100%
+    text-align: center
+    margin-bottom: 100px;
