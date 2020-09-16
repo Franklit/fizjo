@@ -16,3 +16,23 @@
 //     easing: "easeOutExpo",
 //     delay: 1000
 //   });
+
+console.log('siema eniu');
+
+
+// shrink navbar
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+        document.querySelector('nav').style.height = '80px';
+        document.querySelector('.logo').style.lineHeight = '80px';
+        document.querySelector('nav ul').style.lineHeight = '80px';
+    }
+    else{
+        document.querySelector('nav').style.height = '120px';
+        document.querySelector('.logo').style.lineHeight = '120px';
+        document.querySelector('nav ul').style.lineHeight = '120px';
+        }
+}
