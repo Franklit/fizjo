@@ -1,23 +1,4 @@
-// 	// Wrap every letter in a span
-// var textWrapper = document.querySelector('.ml9 .letters');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-// anime.timeline({loop: true})
-//   .add({
-//     targets: '.ml9 .letter',
-//     scale: [0, 1],
-//     duration: 1500,
-//     elasticity: 600,
-//     delay: (el, i) => 45 * (i+1)
-//   }).add({
-//     targets: '.ml9',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
-
-console.log('siema eniu');
 
 
 // shrink navbar
@@ -48,33 +29,66 @@ const navLiList = [...navLi];
 
 
 
-// setInterval(() => {console.log(document.body.scrollTop)}, 1000);
-
-
 // smooth scroll navbar
 
 
 const navbarMenu = document.querySelector('nav ul');
 
 const navbarLinks = document.querySelectorAll('nav ul a');
+const navbarLinksArr = [...navbarLinks];
 
 const burgerUl = document.querySelector('nav i');
 
+const oferta = document.querySelector('.oferta');
+const kadra = document.querySelector('.kadra');
+const cennik = document.querySelector('.cennik');
+const kontakt = document.querySelector('.kontakt');
 
+
+const container = document.querySelector('.container');
+
+
+
+// follow and show where we are on website
 const followNav = ()=> {
-    console.log(document.querySelector('.cennik').scrollTop);
+    const scrollPosition = document.documentElement.scrollTop;
+    navbarLinksArr.forEach(elem => elem.classList.remove('active'))
+
+    if((scrollPosition>=oferta.offsetTop)&&(scrollPosition<kadra.offsetTop)){
+        navbarLinksArr[1].classList.add('active');
+    }
+    else if((scrollPosition>=kadra.offsetTop)&&(scrollPosition<cennik.offsetTop)){
+        navbarLinksArr[2].classList.add('active');
+    }
+    else if((scrollPosition>=cennik.offsetTop)&&(scrollPosition<kontakt.offsetTop)){
+        navbarLinksArr[3].classList.add('active');
+    }
+    else if((scrollPosition>=kontakt.offsetTop)){
+        navbarLinksArr[4].classList.add('active');
+    }
+    else{
+        navbarLinksArr[0].classList.add('active');
+    }
+    
+
 };
 
-followNav();
+window.addEventListener('scroll', followNav)
 
 
+
+
+
+
+
+// close hidden menu when click
 const clickBurger = ()=> {
     burgerUl.click();
 };
 
 
 
-
+// change position using click
 const smoothScrool = (e) =>{
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute('href');
@@ -85,14 +99,9 @@ const smoothScrool = (e) =>{
 }
 
 
-
-
 const navbarLinkClick = (e)=>{
     smoothScrool(e);
     clickBurger();
 }
-
-
-
 
 navbarLinks.forEach(elem => elem.addEventListener('click', navbarLinkClick));
