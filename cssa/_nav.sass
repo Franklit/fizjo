@@ -8,42 +8,62 @@ nav
     position: fixed 
     z-index: 100
     transition: 1s
+
     
 
     .logo
         color: white
         font-size: 35px
         line-height: 120px
-        padding: 0 100px
+        // padding-top: 50px
+        margin-left: 50px
         transition: 1s
+        img 
+            height: 100px
+            margin-top: 10px
+            transition: 1s
+            
     ul
         float: right
         margin-right: 20px  
         line-height: 120px
+        // opacity: .6
+        
+        
+
+
         transition: 1s
+        
         li
             display: inline
+            
+            
             // transition: 1s
             
             margin: 0 5px
             a
-                color: white
+                color: #bbb
+                font-family: $czcionka1
                 font-size: 17px
                 padding: 7px 13px
                 border-radius: 3px
                 text-transform: uppercase
-                transition: .6s
+                // transition: .6s
+                // opacity: .6
                 &:hover
-                    background-color: $colorli
+                    // background-color: $colorli
+                    color: white
                     transition: .5s
             .active
-                background-color: $colorli
+                color: white
+                // opacity: 1
+                // color: red
                 // transition: .5s
     .checkbtn
-        font-size: 30px
+        font-size: 50px
         color: white
         float: right
-        line-height: 80px
+        line-height: 120px
         margin-right: 40px
         cursor: pointer
         display: none
@@ -54,7 +74,7 @@ nav
     nav
         .logo
             font-size: 30px
-            padding-left: 50px
+            margin-left: 50px
         ul
             li 
                 a

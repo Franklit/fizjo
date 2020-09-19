@@ -12,7 +12,7 @@
 }
 
 nav {
-  background-color: #2e2929;
+  background-color: #222;
   height: 120px;
   width: 100%;
   position: fixed;
@@ -25,7 +25,14 @@ nav .logo {
   color: white;
   font-size: 35px;
   line-height: 120px;
-  padding: 0 100px;
+  margin-left: 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav .logo img {
+  height: 100px;
+  margin-top: 10px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -44,30 +51,29 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #bbb;
+  font-family: "Rowdies", cursive;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
-  -webkit-transition: .6s;
-  transition: .6s;
 }
 
 nav ul li a:hover {
-  background-color: #8d60aa;
+  color: white;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 nav ul li .active {
-  background-color: #8d60aa;
+  color: white;
 }
 
 nav .checkbtn {
-  font-size: 30px;
+  font-size: 50px;
   color: white;
   float: right;
-  line-height: 80px;
+  line-height: 120px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -80,7 +86,7 @@ nav #check {
 @media screen and (max-width: 952px) {
   nav .logo {
     font-size: 30px;
-    padding-left: 50px;
+    margin-left: 50px;
   }
   nav ul li a {
     font-size: 16px;
@@ -526,7 +532,7 @@ nav #check {
 
 .kontakt .kontakty .dane {
   width: 25%;
-  height: 100px;
+  height: 170px;
   background-color: #8d60aa;
   position: relative;
   color: white;
@@ -534,7 +540,7 @@ nav #check {
 }
 
 .kontakt .kontakty .dane i {
-  font-size: 40px;
+  font-size: 80px;
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -561,10 +567,11 @@ nav #check {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: "Sriracha", cursive;
 }
 
 .kontakt .sendmsg .message {
-  font-size: 15px;
+  font-size: 11px;
   width: 40%;
   height: 500px;
   background-color: #8d60aa;
@@ -689,6 +696,11 @@ nav #check {
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  font-family: "Sriracha", cursive;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #bb9eca;
 }
 
 .kontakt .sendmsg .map {
@@ -738,7 +750,7 @@ nav #check {
 .bottom {
   width: 100%;
   height: 70px;
-  background-color: #2e2929;
+  background-color: #222;
   font-size: 10px;
   color: white;
   padding-left: 20px;
@@ -773,7 +785,7 @@ nav #check {
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 5px #8d60aa;
           box-shadow: inset 0 0 5px #8d60aa;
-  background: #2e2929;
+  background: #222;
 }
 
 /* Handle */

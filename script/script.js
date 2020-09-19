@@ -10,15 +10,20 @@ function scrollFunction() {
         document.querySelector('nav').style.height = '80px';
         document.querySelector('.logo').style.lineHeight = '80px';
         document.querySelector('nav ul').style.lineHeight = '80px';
-        document.querySelector('nav label i').style.lineHeight = '80px';
         document.querySelector('nav ul').style.top = '80px';
+        document.querySelector('nav label i').style.lineHeight = '80px';
+        document.querySelector('nav img').style.height= '60px';
+        
+        
     }
     else{
         document.querySelector('nav').style.height = '120px';
         document.querySelector('.logo').style.lineHeight = '120px';
         document.querySelector('nav ul').style.lineHeight = '120px';
+        document.querySelector('nav ul').style.top = '120px';
         document.querySelector('nav label i').style.lineHeight = '120px';
         document.querySelector('nav ul').style.top = '120px';
+        document.querySelector('nav img').style.height= '100px';
         
         }
 }
