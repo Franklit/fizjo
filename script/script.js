@@ -26,6 +26,8 @@ function scrollFunction() {
         document.querySelector('nav img').style.height= '100px';
         
         }
+        //dissapear arrow bottom
+        document.documentElement.scrollTop > 20 ? arrowDown.style.display = "none" : arrowDown.style.display = "block"
 }
 
 
@@ -157,3 +159,5 @@ arrowDown.addEventListener('click', ()=>{
         behavior: 'smooth'
     })
 });
+
+
