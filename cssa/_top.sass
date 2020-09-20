@@ -11,7 +11,7 @@
     text-align: center
     height: 20vh
     
-    font-size: 100px
+    font-size: 50px
     font-family: $czcionka1
     text-transform: uppercase
     color: white
@@ -36,14 +36,37 @@
 
 
 .down
-    width: 100%
-    
-    display: flex
-    justify-content: center
-    align-items: down
+  width: 100%
+  // position: relative
+  text-align: center
+  a
+    // position: absolute
+    // text-align: center
+
     i
-        color: white
-        position: fixed
-        bottom: 10px
-        display: none
-#to do usuniecia jak sie zjedzie troche w dol
+      font-size: 50px
+      font-weight: 
+      color: white
+      animation: bounce 2s ease infinite
+
+
+        
+
+
+
+
+@keyframes bounce
+  0%, 25%, 55%, 75%, 100%
+    transform: translateY(0)
+
+  45%
+    transform: translateY(-20px)
+
+  65%
+    transform: translateY(-10px)
+  85%
+    transform: translateY(-5px)
+
+
+
+

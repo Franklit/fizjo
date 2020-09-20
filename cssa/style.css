@@ -138,7 +138,7 @@ nav #check {
   width: 100%;
   text-align: center;
   height: 20vh;
-  font-size: 100px;
+  font-size: 50px;
   font-family: "Rowdies", cursive;
   text-transform: uppercase;
   color: white;
@@ -163,22 +163,52 @@ nav #check {
 
 .down {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: down;
-      -ms-flex-align: down;
-          align-items: down;
+  text-align: center;
 }
 
-.down i {
+.down a i {
+  font-size: 50px;
   color: white;
-  position: fixed;
-  bottom: 10px;
-  display: none;
+  -webkit-animation: bounce 2s ease infinite;
+          animation: bounce 2s ease infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 25%, 55%, 75%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  45% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  65% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  85% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce {
+  0%, 25%, 55%, 75%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  45% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  65% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  85% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 
 .oferta {

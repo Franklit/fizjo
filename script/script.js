@@ -110,3 +110,50 @@ const navbarLinkClick = (e)=>{
 }
 
 navbarLinks.forEach(elem => elem.addEventListener('click', navbarLinkClick));
+
+
+
+//animated text
+
+// const topText = document.querySelector('.napis');
+// topText.style.opacity = '0.2';
+// let opacity = 0;
+// let flag = true;
+
+
+// const opacityText = ()=>{
+    
+//     if(flag){
+//         console.log(Math.round(opacity*100)/100)
+//         topText.style.opacity = opacity + 0.1;
+//         opacity += 0.1;
+//         if((Math.round(opacity*100)/100) === 1){
+//             flag = !flag;
+//         }
+
+//     }else if(!flag){
+//         console.log(Math.round(opacity*100)/100)
+//         topText.style.opacity = opacity - 0.1;
+//         opacity -= 0.1;
+//         if((Math.round(opacity*100)/100)===0){
+//             flag = !flag;
+//         }
+
+//     }
+
+// };
+
+
+// setInterval(opacityText, 100)
+
+
+//click start take to bottom
+
+const arrowDown = document.querySelector('.down a');
+
+arrowDown.addEventListener('click', ()=>{
+    window.scrollTo({
+        top: document.querySelector(`#oferta`).offsetTop,
+        behavior: 'smooth'
+    })
+});
