@@ -1,6 +1,7 @@
 .cennik
     background-color: $color3
     padding-top: 80px
+    padding-bottom: 80px
     
     h1
         @include naglowek()
@@ -18,13 +19,17 @@
         text-align: center
         justify-content: space-around
         .opakcen
-            width: 30%
-            height: 350px
+            width: 20%
+            margin: 5rem
+            // height: 350px
             .cena
                 margin: 0 auto
                 position: relative
-                height: 200px
-                width: 200px
+                // height: 200px
+                // margin: 5rem
+                
+                width: 14rem
+
                 background-color: $color2
                 // border: 2px solid black
                 // margin: 100px 50px
@@ -32,40 +37,40 @@
                 &:before
                     content: ''
                     position: absolute
-                    top: -70px
+                    top: -5.8rem
                     
                     transform: translateX(-50%)
                     width: 0
                     height: 0
-                    border-left: 100px solid transparent
-                    border-right: 100px solid transparent 
-                    border-bottom: 70px solid $color2
+                    border-left: 7rem solid transparent
+                    border-right: 7rem solid transparent 
+                    border-bottom: 5.8rem solid $color2
                 &::after
                     content: ''
                     position: absolute
                     left: 50%
-                    top: -20px
+                    top: -2.3rem
                     transform: translateX(-50%)
-                    width: 40px
-                    height: 40px
+                    width: 3rem
+                    height: 3rem
                     border-radius: 50%
                     background-color: $color3
             ul
-                font-size: 25px
+                font-size: 2rem
                 text-decoration: none
                 margin: 0
                 padding: 0
                 li
                     list-style: none
                     width: 90%
-                    height: 60px
+                    height: 5rem
                     border-bottom: 1px dashed $color1
                     margin: 0 auto
                     color: white
                     &:nth-child(1)
                         line-height: 100%
-                        padding-top: 20px
-                        font-size: 28px
+                        padding-top: 1.2rem
+                        font-size: 2.8rem
                     // font-size: 28px
                 span
                     color: $color1
@@ -85,7 +90,7 @@
         .ceny
             width: 720px
             .opakcen 
-                width: 40%   
+                width: 30%   
 
 @media screen and ( max-width: 750px  )
     .cennik

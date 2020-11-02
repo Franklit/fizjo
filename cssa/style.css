@@ -11,10 +11,33 @@
   outline: 0 !important;
 }
 
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 nav {
   background-color: #222;
   height: 120px;
-  min-width: 500px;
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -32,7 +55,8 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 100px;
+  height: 80%;
+  max-width: 100%;
   margin-top: 10px;
   -webkit-transition: 1s;
   transition: 1s;
@@ -127,8 +151,19 @@ nav #check {
   }
 }
 
-.container {
-  min-width: 500px;
+@media screen and (max-width: 400px) {
+  nav {
+    position: relative;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav .checkbtn {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .container .top {
@@ -143,7 +178,7 @@ nav #check {
   width: 100%;
   text-align: center;
   height: 20vh;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: "Rowdies", cursive;
   text-transform: uppercase;
   color: white;
@@ -152,7 +187,6 @@ nav #check {
 
 .photo {
   width: 100%;
-  height: 600px;
   padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +198,7 @@ nav #check {
 
 .photo img {
   width: 400px;
-  height: 400px;
+  max-width: 100%;
 }
 
 .down {
@@ -225,7 +259,7 @@ nav #check {
 }
 
 .oferta h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: white;
   font-family: "Rowdies", cursive;
   text-align: center;
@@ -234,12 +268,12 @@ nav #check {
 }
 
 .oferta p {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: white;
   font-family: "Sriracha", cursive;
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
 }
 
 .oferta .uslugi {
@@ -255,7 +289,7 @@ nav #check {
 .oferta .uslugi .usluga {
   width: 25%;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,20 +301,21 @@ nav #check {
 
 .oferta .uslugi .usluga img {
   width: 200px;
-  height: 200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .oferta .uslugi .usluga .tekst {
   color: white;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   font-family: "Sriracha", cursive;
+  font-size: 1.3rem;
 }
 
 .oferta .uslugi .usluga span {
-  font-size: 50px;
+  font-size: 3rem;
   width: 100%;
   text-align: center;
   font-family: "Sriracha", cursive;
@@ -302,7 +337,6 @@ nav #check {
   }
   .oferta .uslugi .usluga {
     width: 52%;
-    margin-bottom: 50px;
   }
 }
 
@@ -318,7 +352,7 @@ nav #check {
 }
 
 .kadra h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: white;
   font-family: "Rowdies", cursive;
   text-align: center;
@@ -327,12 +361,12 @@ nav #check {
 }
 
 .kadra p {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: white;
   font-family: "Sriracha", cursive;
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
 }
 
 .kadra .lekarze {
@@ -361,20 +395,21 @@ nav #check {
 
 .kadra .lekarze .lekarz img {
   width: 300px;
-  height: 300px;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 0 1rem;
 }
 
 .kadra .lekarze .lekarz span {
-  font-size: 50px;
+  font-size: 3rem;
   font-family: "Sriracha", cursive;
   color: white;
 }
 
 .kadra .lekarze .lekarz p {
   text-align: center;
-  padding: 0 100px;
+  padding: 0 2rem;
 }
 
 @media screen and (max-width: 1060px) {
@@ -383,7 +418,7 @@ nav #check {
   }
   .kadra .lekarze .lekarz {
     width: 40%;
-    margin-bottom: 50px;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -408,10 +443,11 @@ nav #check {
 .cennik {
   background-color: #9b68bd;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .cennik h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: white;
   font-family: "Rowdies", cursive;
   text-align: center;
@@ -420,12 +456,12 @@ nav #check {
 }
 
 .cennik p {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: white;
   font-family: "Sriracha", cursive;
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
 }
 
 .cennik .ceny {
@@ -442,46 +478,45 @@ nav #check {
 }
 
 .cennik .ceny .opakcen {
-  width: 30%;
-  height: 350px;
+  width: 20%;
+  margin: 5rem;
 }
 
 .cennik .ceny .opakcen .cena {
   margin: 0 auto;
   position: relative;
-  height: 200px;
-  width: 200px;
+  width: 14rem;
   background-color: #bb9eca;
 }
 
 .cennik .ceny .opakcen .cena:before {
   content: '';
   position: absolute;
-  top: -70px;
+  top: -5.8rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid #bb9eca;
+  border-left: 7rem solid transparent;
+  border-right: 7rem solid transparent;
+  border-bottom: 5.8rem solid #bb9eca;
 }
 
 .cennik .ceny .opakcen .cena::after {
   content: '';
   position: absolute;
   left: 50%;
-  top: -20px;
+  top: -2.3rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: #9b68bd;
 }
 
 .cennik .ceny .opakcen ul {
-  font-size: 25px;
+  font-size: 2rem;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -490,7 +525,7 @@ nav #check {
 .cennik .ceny .opakcen ul li {
   list-style: none;
   width: 90%;
-  height: 60px;
+  height: 5rem;
   border-bottom: 1px dashed #8d60aa;
   margin: 0 auto;
   color: white;
@@ -498,8 +533,8 @@ nav #check {
 
 .cennik .ceny .opakcen ul li:nth-child(1) {
   line-height: 100%;
-  padding-top: 20px;
-  font-size: 28px;
+  padding-top: 1.2rem;
+  font-size: 2.8rem;
 }
 
 .cennik .ceny .opakcen ul span {
@@ -518,7 +553,7 @@ nav #check {
     width: 720px;
   }
   .cennik .ceny .opakcen {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -537,7 +572,7 @@ nav #check {
 }
 
 .kontakt h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: white;
   font-family: "Rowdies", cursive;
   text-align: center;
@@ -546,12 +581,12 @@ nav #check {
 }
 
 .kontakt p {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: white;
   font-family: "Sriracha", cursive;
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
 }
 
 .kontakt .kontakty {
@@ -701,6 +736,7 @@ nav #check {
   border: none;
   color: white;
   background-color: #bb9eca;
+  padding: 20px;
 }
 
 .kontakt .sendmsg .message .textcontent .textarea::-webkit-input-placeholder {
@@ -738,6 +774,7 @@ nav #check {
   border: none;
   cursor: pointer;
   background: #bb9eca;
+  color: white;
 }
 
 .kontakt .sendmsg .map {
@@ -800,7 +837,6 @@ nav #check {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -844,4 +880,7 @@ nav #check {
 }
 
 /* Handle on hover */
+body {
+  background-color: pink;
+}
 /*# sourceMappingURL=style.css.map */
